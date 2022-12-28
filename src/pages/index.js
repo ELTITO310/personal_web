@@ -19,7 +19,7 @@ export default function Home() {
       </section>
       <section className={styles.me}>
         <h1>Sobre mi</h1>
-        <p>{ emoji('¡Hola! 👋, mi nombre es Roy Erickson, me fascina el Desarrollo Web 💻, Desarrollar bots de Discord 🤖 y aprender algo nuevo cada día 📝, empece en este hermsoso mundo de la programación hace 3 años, intrigado por la curiosidad de tener un bot de Discord para mi pequeño server, actualmente me dedico principalmente al Desarrollo Web. 😁') }.</p>
+        <p>{ emoji('¡Hola! 👋, mi nombre es Roy Erickson, me fascina el Desarrollo Web 💻, Desarrollar bots de Discord 🤖 y aprender algo nuevo cada día 📝, empece en este hermsoso mundo de la programación hace 3 años, intrigado por la curiosidad de tener un bot de Discord para mi pequeño server, actualmente me dedico principalmente al Desarrollo Web. 😁') } </p>
       </section>
     </>
   )

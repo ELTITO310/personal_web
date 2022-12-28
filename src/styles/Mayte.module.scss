@@ -1,0 +1,88 @@
+.mayte {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 237, 237);
+    color: #000;
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 7.5rem;
+    }
+    svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    @media (max-width: 750px) {
+        .mayte {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.words {
+    height: 200vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 2.5rem;
+    padding-bottom: 5rem;
+    div {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            border-radius: 20px;
+        }
+        p {
+            width: 50%;
+        }
+        &:nth-child(5) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 4rem;
+            svg {
+                animation: bounce 1s infinite; 
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+              transform: translateY(-25%);
+              animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+              transform: translateY(0);
+              animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+          }
+    }
+}
+
+.beatiful {
+    position: relative;
+    height: calc(100vh + 2rem);
+    background-color: rgb(241, 237, 237);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 4rem;
+    }
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        height: 2rem;
+    }
+}

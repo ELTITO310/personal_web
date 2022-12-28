@@ -1,4 +1,4 @@
-import styles from "@/styles/Nav.module.scss";
+import styles from "./Nav.module.scss";
 import Link from 'next/link'
 import emoji from 'react-easy-emoji';
 import { useState } from "react";
@@ -20,6 +20,7 @@ const Nav = () => {
         <li><Link href="/">{ emoji('Inicio 🏠') }</Link></li>
         <li><Link href="/aboutme">{ emoji('Sobre Mí 👦') }</Link></li>
         <li><Link href="/proyects">{ emoji('Proyectos 📚') }</Link></li>
+        <li><Link href="/mayte"><b>{ emoji('Mayte 💖') } </b></Link></li>
       </ul>
     </nav>
   );
