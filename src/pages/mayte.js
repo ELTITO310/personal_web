@@ -13,7 +13,7 @@ const Mayte = () => {
 
     const { ref: mRef, inView: mInView, entry } = useInView();
     const { ref: bRef, inView: bInView} = useInView({
-        threshold: 0.2
+        threshold: 0.4
     })
     const { width, height } = useWindowSize()
     const [andrea] = useAudio({

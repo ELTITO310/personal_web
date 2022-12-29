@@ -1,32 +1,32 @@
 .mayte {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    // justify-content: center;
+    grid-template-rows: 1fr 1fr;
     background-color: rgb(241, 237, 237);
     color: #000;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    width: 100%;
     h1 {
         font-size: 4rem;
-        margin-bottom: 7.5rem;
+        margin: 0 0;
+        text-align: center;
     }
     svg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        margin-top: auto;
         z-index: 100;
+        min-width: 100%;
     }
     @media (max-width: 750px) {
-        .mayte {
-            h1 {
-                font-size: 2rem;
-            }
+        h1 {
+            font-size: 2rem;
         }
     }
 }
 
 .words {
-    height: 200vh;
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -76,13 +76,5 @@
     align-items: center;
     h1 {
         font-size: 4rem;
-    }
-    div {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #000;
-        height: 2rem;
     }
 }
